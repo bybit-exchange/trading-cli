@@ -1,0 +1,43 @@
+{
+  "name": "bybit-official-trading-cli",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Bybit AI Trading CLI",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "bybit",
+    "trading",
+    "cli",
+    "crypto",
+    "exchange"
+  ],
+  "bin": {
+    "trading-cli": "dist/index.js",
+    "bybit-official-trading-cli": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bybit-exchange/trading-cli.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
