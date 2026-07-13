@@ -1,0 +1,27 @@
+codegen/parse-spec.ts
+  4efc08e7bc683160 3,36-37
+tests/codegen/naming.test.ts
+  4efc08e7bc683160 5,22-27
+codegen/naming.ts
+  4efc08e7bc683160 12-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "91ec6a9e439807bc8d486511707977c24fcae6f1",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 23,
+      "total_deletions": 7,
+      "accepted_lines": 103240,
+      "overriden_lines": 0
+    }
+  }
+}
