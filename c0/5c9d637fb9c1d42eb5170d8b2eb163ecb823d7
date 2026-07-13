@@ -1,0 +1,41 @@
+src/generated/commands/account__get-wallet-balance.ts
+  4efc08e7bc683160 1-21
+src/generated/commands/market__get-market-kline.ts
+  4efc08e7bc683160 1-25
+src/generated/commands/market__get-recent-public-trades.ts
+  4efc08e7bc683160 1-24
+tests/unit/client.test.ts
+  4efc08e7bc683160 12,24,44,55
+src/generated/commands/market__get-instruments-info.ts
+  4efc08e7bc683160 1-25
+src/generated/index.ts
+  4efc08e7bc683160 1-14
+src/generated/commands/market__get-tickers.ts
+  4efc08e7bc683160 1-23
+tests/unit/handler.test.ts
+  4efc08e7bc683160 21
+codegen/index.ts
+  4efc08e7bc683160 1-71
+src/generated/catalog.ts
+  4efc08e7bc683160 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "c05c9d637fb9c1d42eb5170d8b2eb163ecb823d7",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 246,
+      "total_deletions": 5,
+      "accepted_lines": 103463,
+      "overriden_lines": 0
+    }
+  }
+}
