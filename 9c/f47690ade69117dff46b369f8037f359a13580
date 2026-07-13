@@ -1,0 +1,23 @@
+.gitlab-ci.yml
+  4efc08e7bc683160 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "9cf47690ade69117dff46b369f8037f359a13580",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 20,
+      "total_deletions": 0,
+      "accepted_lines": 103237,
+      "overriden_lines": 0
+    }
+  }
+}
