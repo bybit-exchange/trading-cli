@@ -1,0 +1,25 @@
+README.md
+  4efc08e7bc683160 12-16
+.gitmodules
+  4efc08e7bc683160 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "4eaab7ee29c9b301d37c1fc08d364725c251ee7b",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 103225,
+      "total_deletions": 0,
+      "accepted_lines": 103225,
+      "overriden_lines": 0
+    }
+  }
+}
