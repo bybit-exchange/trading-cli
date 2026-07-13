@@ -1,0 +1,25 @@
+tests/unit/output.test.ts
+  4efc08e7bc683160 1-34
+src/runtime/output.ts
+  4efc08e7bc683160 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "c57f215a745bc2883489e4ab2bb77dc2874b3a65",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 53,
+      "total_deletions": 0,
+      "accepted_lines": 103270,
+      "overriden_lines": 0
+    }
+  }
+}
