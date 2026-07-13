@@ -1,0 +1,887 @@
+src/generated/commands/account__set-collateral-coin.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__coin-convert-limit-query.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/account__get-trade-info-for-analysis.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/fiat__confirm-quote.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-repay.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/account__get-fee-rate.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/market__get-server-time.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/pre-upgrade__get-pre-upgrade-transaction-log.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/earn__get-liquidity-mining-orders.ts
+  4efc08e7bc683160 1-36
+src/generated/commands/account__get-account-withdrawal-info.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/strategy__query-strategy-order-list.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/bybitpay__agreement-unsign.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__delete-apikey.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-repayment-available-amount.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/p2p__get-order-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__query-sub-members-v5.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/fmartingalebot__get-fmart-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__quick-repayment.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__query-sub-member-deposit-records.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/fiat__query-trade.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/market__get-group-fee-rate.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__coin-list-query.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/bybitpay__agreement-query.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/account__smp-group-id-query-by-uid.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-premium-index-price-kline.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/asset__query-order-by-page.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/crypto-loan-flexible__get-crypto-loan-flexible-borrow-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/asset__sub-member-list-query.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__set-hedging-mode.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fcombobot__get-combo-limit.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-auto-repay-mode.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/user__create-sub-member.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-token-product.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__get-earn-apr-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/alpha__execute-purchase.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__query-deposit-records.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/p2p__release-assets.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-vasplist.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__execute-lpredeem.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spot-margin-trade__query-fixed-borrow-orders.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__place-advance-earn-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__agreement-list.ts
+  4efc08e7bc683160 1-36
+src/generated/commands/alpha__get-prediction-token-price.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-pay-token-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-common__get-crypto-loan-common-max-collateral-amount.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fgridbot__create-fgrid-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-index-price-kline.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/fgridbot__get-fgrid-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__agreement-pay-with-sign.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/aurora__rec-aurora-creation-aiparams.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-common__get-crypto-loan-common-collateral-data.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__account-borrow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__get-pay-result.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-supply-contract-info.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/asset__get-delivery-record.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/spread__cancel-all-spread-orders.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/spread__get-spread-execution-list.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/rfq__get-rfqs.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/market__get-order-price-limit.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/position__get-move-position-history.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/user__delete-sub-member-v5.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__user-asset-info-query.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/asset__get-withdrawable-amount-by-coin.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/crypto-loan-common__post-crypto-loan-common-adjust-ltv.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__create-refund-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-get-loan-order.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/ins-loan__ins-loan-repay-loan.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-my-ad-details.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/pre-upgrade__get-pre-upgrade-settlement-record.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/rfq__cancel-all-rfqs.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spot-margin-trade__query-fixed-borrow-contracts.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/rfq__get-trade-history.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/user__frozen-sub-member.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-product-infos.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/market__get-funding-rate-history.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/strategy__create-chase-order-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-asset-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/copy-mt5__create-copy-mt5-bind.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__convert-history-query.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-supply-order-cancel.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__get-token-historical-apr.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__place-fixed-term-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__accept-non-lp-quote.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/alpha__get-prediction-order-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__get-dcp-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-advance-earn-position.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/user__query-sub-members.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__transfer-sub-member-save.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/unknown__get-tax-report-url.ts
+  4efc08e7bc683160 1-28
+codegen/index.ts
+  4efc08e7bc683160 1,7-9,13-25,31-50,74-77,80,83,90-102
+src/generated/commands/asset__query-withdraw-addresses.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-borrow-order-quote.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__cancel-rfq.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/alpha__execute-prediction-buy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__get-position-info.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/asset__asset-info-query.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/account__get-account-instruments.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/broker__get-award-info.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/account__get-user-settings.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/affiliate__get-affiliate-user-list.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-repayment-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/pre-upgrade__get-pre-upgrade-closed-pnl.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/rfq__cancel-all-quotes.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__agreement-refund.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-supply.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/asset__query-result.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/spread__get-spread-instruments-info.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/strategy__create-twap-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__agreement-pay.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/unknown__create-tax-report.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/broker__query-broker-all-uid-details.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/asset__query-coin-chain-info.ts
+  4efc08e7bc683160 1-28
+src/generated/index.ts
+  4efc08e7bc683160 2-87,89-97,99-343,345-436,439-524,526-534,536-873
+src/generated/commands/asset__get-portfolio-margin.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/account__get-user-setting-config.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__no-convert-repay.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/spread__amend-spread-order.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/account__get-mmp-state.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/asset__universal-transfer-list-query.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-coin-state.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/order__cancel-all-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__upgrade-to-uta.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-borrow-contract-info.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__pwm-query-fund-transfer-result.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/strategy__stop-strategy.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/account__set-collateral-switch.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-coin-balance.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/bybitpay__mock-payment-status.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-subscribe.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-common__get-crypto-loan-common-adjustment-history.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__get-rfq-config.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__batch-set-collateral.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/user__create-sub-apikey.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-price-history.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__query-withdraw-records.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/bybitpay__create-payout.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-event-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-create-investment-plan.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-my-ads.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-biz-token-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-flexible__get-crypto-loan-flexible-ongoing-coin.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/alpha__get-order-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/copy-trade__create-copy-trade-bind.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-asset-overview.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__get-earn-hourly-yield-history.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-borrow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-pending-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/pre-upgrade__get-pre-upgrade-execution-list.ts
+  4efc08e7bc683160 1-37
+src/generated/commands/bybitpay__agreement-pay-query.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/asset__account-coin-balance-query.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/copy-mt5__get-copy-trading-trad-fi-leaderboard.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-liquidity-mining-yield-records.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__pwm-inst-settle-profit.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/grid__query-grid-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-mark-price-kline.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__pwm-invest-more.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__batch-cancel-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-hold-to-earn-product.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-coin-delta-amount.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/p2p__update-ad.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-repaid-history.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__get-rwa-nav-chart.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__get-advance-earn-product-extra-info.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/alpha__get-prediction-match-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fiat__query-coin-list.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__pwm-inst-list-orders.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/user__query-apikey.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-advance-earn-product.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/rfq__create-rfq.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/strategy__create-pov-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__agreement-pay-list.ts
+  4efc08e7bc683160 1-37
+src/generated/commands/market__get-adl-alert.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/position__add-reduce-margin.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/alpha__get-prediction-side-market-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-create-fund.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-ltv-convert.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__set-leverage.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/spot-margin-trade__spot-margin-switch-mode.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/grid__close-grid-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/unknown__get-register-time.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-order-estimate.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__claim-liquidity-interest.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/execution__get-execution-list.ts
+  4efc08e7bc683160 1-38
+src/generated/commands/alpha__execute-prediction-sell.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/dca__close-dcabot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__query-order-from-open-api.ts
+  4efc08e7bc683160 1-37
+src/generated/commands/crypto-loan-common__get-crypto-loan-common-position.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-fixed-term-position.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__pwm-get-new-plan-detail.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/position__set-auto-add-margin.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/alpha__get-lppay-token-price.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-portfolio-summary.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-rwa-position-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-group-stage-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-earn-position.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__get-earn-product.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__get-fixed-term-product.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__pwm-get-plan-detail.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/order__get-open-orders.ts
+  4efc08e7bc683160 1-37
+src/generated/commands/order__pre-check-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/affiliate__get-affiliate-sub-list.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/asset__inter-transfer.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__get-smp-group.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-ensure-tokens-convert.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/order__get-spot-borrow-quota.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/spot-margin-trade__get-tiered-collateral-ratio.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/spread__get-spread-trade-history.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/market__get-open-interest.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/account__manual-repay.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/account__get-borrow-history.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/earn__get-rwa-order-list.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/earn__add-liquidity.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-smart-leverage-redeem-est-amount-list.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/account__set-spot-hedging.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/broker__set-broker-api-limit.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-manage-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__place-token-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fcombobot__close-combo-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-list-product-cards.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fmartingalebot__close-fmart-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__batch-amend-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/broker__distribute-award.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/account__reset-mmp.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/asset__query-small-asset-list.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__small-asset-quote.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-position-history.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__set-fixed-term-auto-invest.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__get-option-asset-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-lporder-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-common__get-crypto-loan-common-loanable-data.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-manage-investment-plan.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fmartingalebot__get-fmart-limit.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-delivery-price.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/asset__send-withdraw.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__create-quote.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-flexible-available-inventory.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/order__create-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spread__get-spread-max-qty.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/strategy__create-iceberg-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-timeline-stages.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/asset__small-asset-convert.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/pre-upgrade__get-pre-upgrade-order-history.ts
+  4efc08e7bc683160 1-38
+src/generated/commands/broker__get-distribution-record.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/spot-margin-trade__query-borrow-liability.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/spread__get-spread-order-history.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/spread__get-spread-tickers.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__get-liquidity-mining-products.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__convert-execute.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__set-dcp.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-ads.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-repay-collateral.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__place-earn-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-user-payment.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__get-close-position.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/alpha__get-biz-token-details.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__set-batch-collateral-switch.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-biz-token-price-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-order-book.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spread__get-spread-recent-trades.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/order__cancel-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/strategy__query-strategy-list.ts
+  4efc08e7bc683160 1-36
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-fully-repay.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-supply-order-quote.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/earn__get-token-order-list.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/spot-margin-trade__get-position-tiers.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/market__get-orderbook.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/account__get-account-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/unknown__get-tax-report-status.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/p2p__mark-order-as-paid.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__get-affiliate-user-info.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/user__list-sub-apikeys-v5.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/user__query-referrals.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/rfq__cancel-quote.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/spot-margin-trade__get-historical-interest-rate.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/user__sign-agreement.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fcombobot__get-combo-detail.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-historical-volatility.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/execution__get-trade-history.ts
+  4efc08e7bc683160 1-38
+src/generated/commands/position__confirm-new-risk-limit.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/user__delete-sub-apikey.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__manual-borrow.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__pwm-list-order.ts
+  4efc08e7bc683160 1-36
+src/generated/commands/earn__pwm-create-custom-plan.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-new-delivery-price.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/account__set-margin-mode.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/alpha__get-asset-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fgridbot__validate-fgrid-input.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-index-price-components.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/market__get-long-short-ratio.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-renew-info.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/fiat__query-balance.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__query-sub-member-deposit-address.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-max-borrowable.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/spot-margin-trade__get-vip-margin-data.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/asset__query-small-asset-convert-order.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/aurora__rec-easy-bot-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-repay-collateral.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/position__get-closed-pnl.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__modify-earn-position.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fiat__get-reference-price.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/p2p__send-chat-message.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__demo-apply-money.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__fx-convert.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/bybitpay__create-pay-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spread__create-spread-order.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/bybitpay__agreement-sign.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-earn-yield-history.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/grid__validate-grid-input.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fgridbot__close-fgrid-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__place-rwa-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-fund-nav.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/market__get-fee-group-info.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/account__get-pay-info.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-borrow-order-info.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__pwm-asset-trend.ts
+  4efc08e7bc683160 1-30
+src/generated/catalog.ts
+  4efc08e7bc683160 4-14,18-20,25-76,81-146,150-198,201-244,247-3046
+src/generated/commands/broker__query-broker-cap.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fcombobot__create-combo-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__dcp-set-timewindow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__get-order-history.ts
+  4efc08e7bc683160 1-39
+src/generated/commands/p2p__remove-ad.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__get-transferable-amount.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/crypto-loan-common__post-crypto-loan-common-max-loan.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spread__cancel-spread-order.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/rfq__get-public-trades.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/spread__get-spread-open-orders.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/account__query-dcp-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__set-price-limit.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/pre-upgrade__get-pre-upgrade-delivery-record.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/earn__get-token-position.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/spot-margin-trade__get-spot-margin-trade-state.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-get-investment-plans.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/earn__pwm-list-investment-plans.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/alpha__execute-lpstake.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-liquidity-mining-liquidation-records.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/earn__get-token-daily-yield.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/aurora__rec-explore-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__redeem-fixed-term.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-risk-limit.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/alpha__get-prediction-pay-token-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__account-repay.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-counterparty-user-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-insurance-pool.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/account__one-click-repay.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/asset__universal-transfer.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-fixed-term-order.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/alpha__get-lpposition-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__add-margin.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-advance-earn-order.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/earn__get-hold-to-earn-yield-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/earn__get-rwa-product-list.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/rfq__get-quotes-realtime.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/asset__set-default-deposit-to-account.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-token-hourly-yield.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/earn__pwm-fund-transfer.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__get-collateral-info.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/alpha__get-lppool-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-account-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-association-uid.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__get-closed-position-history.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/copy-trade__get-copy-trading-classic-leaderboard.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__switch-position-mode.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/earn__reinvest-liquidity.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-prediction-engine-status.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/ins-loan__ins-loan-ensure-tokens.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/account__set-mmp.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/account__get-transaction-log.ts
+  4efc08e7bc683160 1-37
+src/generated/commands/aurora__get-aurora-strategy.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__set-trading-stop.ts
+  4efc08e7bc683160 1-43
+src/generated/commands/spot-margin-trade__account-fixed-borrow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-trade-quote.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/order__batch-create-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-coin-greeks.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow-order-cancel.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__remove-liquidity.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__get-member-account-type.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/alpha__get-lppool-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__account-no-convert-repay.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/aurora__rec-aurora-home-aiparams.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-flexible__get-crypto-loan-flexible-repayment-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/asset__query-funding-detail-api.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/dca__create-dcabot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/alpha__get-lppay-token-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__get-double-win-leverage.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/asset__query-internal-deposit-records.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/earn__list-earn-coupons.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/earn__pwm-inst-create-sub-account.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/market__get-rpi-orderbook.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/order__amend-order.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__inter-transfer-list-query.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/p2p__upload-chat-file.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/position__get-position-symbol-info.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__pwm-claim.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__execute-quote.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/spot-margin-trade__query-fixed-available-inventory.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/earn__pwm-redeem.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fmartingalebot__create-fmart-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/grid__create-grid-bot.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/account__upgrade-to-uta-pro.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-total-members-assets.ts
+  4efc08e7bc683160 1-28
+src/generated/commands/asset__limit-order-callback.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__update-apikey.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__get-quotes.ts
+  4efc08e7bc683160 1-34
+src/generated/commands/asset__query-deposit-address.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/alpha__get-prediction-position-list.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-renew.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__get-earn-order-history.ts
+  4efc08e7bc683160 1-35
+src/generated/commands/spot-margin-trade__set-auto-repay-mode.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/fiat__query-trade-history.ts
+  4efc08e7bc683160 1-31
+src/generated/commands/user__get-affiliate-custom-open-info-v5.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/alpha__execute-redeem.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/spot-margin-trade__renew-fixed-borrow.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__quote-apply.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-chat-messages.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/earn__pwm-inst-list-funds.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/fiat__apply-quote.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/p2p__get-all-orders.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/user__query-escrow-sub-members-v5.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/spot-margin-trade__spot-margin-set-leverage.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/broker__query-broker-earning.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/spot-margin-trade__query-fixed-borrow-market.ts
+  4efc08e7bc683160 1-32
+src/generated/commands/asset__cancel-withdraw.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/crypto-loan-fixed__get-crypto-loan-fixed-supply-order-info.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/broker__query-broker-account-info.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/rfq__get-rfqs-realtime.ts
+  4efc08e7bc683160 1-30
+src/generated/commands/spread__get-spread-orderbook.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/user__update-sub-apikey.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__transfer-coin-list-query.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/earn__get-liquidity-mining-positions.ts
+  4efc08e7bc683160 1-29
+src/generated/commands/p2p__post-ad.ts
+  4efc08e7bc683160 1-27
+src/generated/commands/asset__get-settlement-record.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/position__move-position.ts
+  4efc08e7bc683160 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "9c5e8f5167ac3961a1d76658f2224ffd80f38e0f",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 16613,
+      "total_deletions": 176,
+      "accepted_lines": 16479,
+      "overriden_lines": 0
+    }
+  }
+}
