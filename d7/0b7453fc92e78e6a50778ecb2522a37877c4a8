@@ -1,0 +1,35 @@
+tests/unit/rsa-signer.test.ts
+  4efc08e7bc683160 1-40
+src/runtime/handler.ts
+  4efc08e7bc683160 24,29,34
+src/runtime/rsa-signer.ts
+  4efc08e7bc683160 1-41
+tests/unit/client.test.ts
+  4efc08e7bc683160 5,54
+tests/unit/credentials.test.ts
+  4efc08e7bc683160 12,14
+src/runtime/credentials.ts
+  4efc08e7bc683160 1-6,23-37,42,45
+src/runtime/client.ts
+  4efc08e7bc683160 2,35,40-43,51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "d70b7453fc92e78e6a50778ecb2522a37877c4a8",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 118,
+      "total_deletions": 15,
+      "accepted_lines": 118,
+      "overriden_lines": 0
+    }
+  }
+}
