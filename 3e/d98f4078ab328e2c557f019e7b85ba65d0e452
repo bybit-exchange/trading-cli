@@ -1,0 +1,435 @@
+src/generated/commands/rfq__create-rfq.ts
+  4efc08e7bc683160 52
+src/generated/commands/unknown__get-register-time.ts
+  4efc08e7bc683160 22
+src/generated/commands/alpha__get-asset-detail.ts
+  4efc08e7bc683160 34
+src/generated/commands/p2p__remove-ad.ts
+  4efc08e7bc683160 28
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-repay.ts
+  4efc08e7bc683160 34
+src/generated/commands/user__frozen-sub-member.ts
+  4efc08e7bc683160 34
+src/generated/commands/bybitpay__mock-payment-status.ts
+  4efc08e7bc683160 58
+src/generated/commands/alpha__execute-lpredeem.ts
+  4efc08e7bc683160 46
+src/generated/commands/account__set-mmp.ts
+  4efc08e7bc683160 52
+src/generated/commands/alpha__execute-purchase.ts
+  4efc08e7bc683160 76
+src/generated/commands/earn__pwm-inst-settle-profit.ts
+  4efc08e7bc683160 34
+src/generated/commands/unknown__create-tax-report.ts
+  4efc08e7bc683160 46
+src/generated/commands/earn__pwm-inst-create-sub-account.ts
+  4efc08e7bc683160 34
+src/generated/commands/order__set-dcp.ts
+  4efc08e7bc683160 34
+src/generated/commands/user__update-apikey.ts
+  4efc08e7bc683160 40
+src/generated/commands/spread__amend-spread-order.ts
+  4efc08e7bc683160 52
+src/generated/commands/spot-margin-trade__spot-margin-switch-mode.ts
+  4efc08e7bc683160 28
+src/generated/commands/fmartingalebot__get-fmart-detail.ts
+  4efc08e7bc683160 28
+src/generated/commands/bybitpay__create-payout.ts
+  4efc08e7bc683160 106
+src/generated/commands/crypto-loan-common__post-crypto-loan-common-adjust-ltv.ts
+  4efc08e7bc683160 40
+src/generated/commands/alpha__get-prediction-event-detail.ts
+  4efc08e7bc683160 40
+src/generated/commands/rfq__execute-quote.ts
+  4efc08e7bc683160 40
+src/generated/commands/earn__add-margin.ts
+  4efc08e7bc683160 52
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow.ts
+  4efc08e7bc683160 64
+src/generated/commands/asset__inter-transfer.ts
+  4efc08e7bc683160 52
+src/generated/commands/alpha__get-lppay-token-price.ts
+  4efc08e7bc683160 34
+src/generated/commands/asset__transfer-sub-member-save.ts
+  4efc08e7bc683160 28
+src/generated/commands/bybitpay__fx-convert.ts
+  4efc08e7bc683160 76
+src/generated/commands/asset__small-asset-convert.ts
+  4efc08e7bc683160 28
+src/generated/commands/copy-trade__create-copy-trade-bind.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__remove-liquidity.ts
+  4efc08e7bc683160 52
+src/generated/commands/account__set-hedging-mode.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-prediction-side-market-list.ts
+  4efc08e7bc683160 28
+src/generated/commands/broker__distribute-award.ts
+  4efc08e7bc683160 52
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-renew.ts
+  4efc08e7bc683160 34
+src/generated/commands/account__set-batch-collateral-switch.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-trade-quote.ts
+  4efc08e7bc683160 52
+src/generated/commands/fcombobot__create-combo-bot.ts
+  4efc08e7bc683160 112
+src/generated/commands/grid__create-grid-bot.ts
+  4efc08e7bc683160 142
+src/generated/commands/account__reset-mmp.ts
+  4efc08e7bc683160 28
+src/generated/commands/account__upgrade-to-uta.ts
+  4efc08e7bc683160 22
+src/generated/commands/aurora__rec-easy-bot-strategy.ts
+  4efc08e7bc683160 40
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-repay-collateral.ts
+  4efc08e7bc683160 40
+src/generated/commands/fgridbot__create-fgrid-bot.ts
+  4efc08e7bc683160 172
+src/generated/commands/alpha__get-prediction-match-list.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-prediction-token-price.ts
+  4efc08e7bc683160 28
+src/generated/commands/bybitpay__agreement-refund.ts
+  4efc08e7bc683160 76
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow-order-cancel.ts
+  4efc08e7bc683160 28
+src/generated/commands/earn__pwm-fund-transfer.ts
+  4efc08e7bc683160 52
+src/generated/commands/ins-loan__ins-loan-repay-loan.ts
+  4efc08e7bc683160 34
+src/generated/commands/account__account-repay.ts
+  4efc08e7bc683160 40
+src/generated/commands/order__pre-check-order.ts
+  4efc08e7bc683160 148
+src/generated/commands/account__batch-set-collateral.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-order-list.ts
+  4efc08e7bc683160 64
+tests/unit/whitelist.test.ts
+  4efc08e7bc683160 1-54
+src/generated/commands/fmartingalebot__create-fmart-bot.ts
+  4efc08e7bc683160 124
+src/generated/commands/account__no-convert-repay.ts
+  4efc08e7bc683160 34
+src/generated/commands/order__cancel-order.ts
+  4efc08e7bc683160 52
+src/generated/commands/order__cancel-all-orders.ts
+  4efc08e7bc683160 58
+src/generated/commands/bybitpay__create-pay-order.ts
+  4efc08e7bc683160 130
+src/generated/commands/p2p__mark-order-as-paid.ts
+  4efc08e7bc683160 40
+src/generated/commands/earn__add-liquidity.ts
+  4efc08e7bc683160 64
+src/generated/commands/alpha__get-prediction-order-list.ts
+  4efc08e7bc683160 64
+src/generated/commands/spot-margin-trade__account-fixed-borrow.ts
+  4efc08e7bc683160 58
+src/generated/commands/user__create-sub-member.ts
+  4efc08e7bc683160 58
+src/generated/commands/unknown__get-tax-report-url.ts
+  4efc08e7bc683160 28
+src/generated/commands/user__update-sub-apikey.ts
+  4efc08e7bc683160 58
+src/generated/commands/p2p__send-chat-message.ts
+  4efc08e7bc683160 52
+src/generated/commands/asset__set-default-deposit-to-account.ts
+  4efc08e7bc683160 28
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-supply.ts
+  4efc08e7bc683160 52
+src/generated/commands/order__batch-create-orders.ts
+  4efc08e7bc683160 34
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-fully-repay.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__place-token-order.ts
+  4efc08e7bc683160 52
+src/generated/commands/alpha__get-prediction-price-history.ts
+  4efc08e7bc683160 46
+src/generated/commands/order__create-order.ts
+  4efc08e7bc683160 226
+src/generated/commands/account__manual-repay.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__reinvest-liquidity.ts
+  4efc08e7bc683160 40
+src/generated/commands/account__account-borrow.ts
+  4efc08e7bc683160 34
+src/generated/commands/account__quick-repayment.ts
+  4efc08e7bc683160 28
+src/generated/commands/bybitpay__agreement-pay-with-sign.ts
+  4efc08e7bc683160 52
+src/generated/commands/p2p__get-pending-orders.ts
+  4efc08e7bc683160 64
+src/generated/commands/position__move-position.ts
+  4efc08e7bc683160 40
+src/generated/commands/spot-margin-trade__set-auto-repay-mode.ts
+  4efc08e7bc683160 34
+src/generated/commands/p2p__get-all-orders.ts
+  4efc08e7bc683160 64
+src/generated/commands/alpha__get-prediction-position-list.ts
+  4efc08e7bc683160 40
+src/runtime/confirm.ts
+  4efc08e7bc683160 4,47-49
+src/generated/commands/p2p__release-assets.ts
+  4efc08e7bc683160 28
+src/generated/commands/account__one-click-repay.ts
+  4efc08e7bc683160 28
+src/generated/commands/account__upgrade-to-uta-pro.ts
+  4efc08e7bc683160 22
+src/generated/commands/alpha__get-lppay-token-list.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__pwm-redeem.ts
+  4efc08e7bc683160 64
+src/generated/commands/rfq__cancel-rfq.ts
+  4efc08e7bc683160 34
+src/generated/commands/strategy__create-chase-order-strategy.ts
+  4efc08e7bc683160 94
+src/generated/commands/spread__cancel-all-spread-orders.ts
+  4efc08e7bc683160 34
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-supply-order-cancel.ts
+  4efc08e7bc683160 34
+src/generated/commands/account__demo-apply-money.ts
+  4efc08e7bc683160 34
+src/generated/commands/strategy__stop-strategy.ts
+  4efc08e7bc683160 28
+src/generated/commands/user__delete-apikey.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__execute-prediction-sell.ts
+  4efc08e7bc683160 58
+src/generated/commands/earn__pwm-create-custom-plan.ts
+  4efc08e7bc683160 40
+src/generated/commands/fcombobot__close-combo-bot.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__place-earn-order.ts
+  4efc08e7bc683160 82
+src/generated/commands/earn__place-advance-earn-order.ts
+  4efc08e7bc683160 106
+src/generated/commands/alpha__execute-redeem.ts
+  4efc08e7bc683160 76
+src/generated/commands/asset__small-asset-quote.ts
+  4efc08e7bc683160 40
+src/generated/commands/asset__quote-apply.ts
+  4efc08e7bc683160 82
+src/generated/commands/earn__pwm-subscribe.ts
+  4efc08e7bc683160 40
+src/generated/commands/asset__cancel-withdraw.ts
+  4efc08e7bc683160 28
+src/generated/commands/p2p__update-ad.ts
+  4efc08e7bc683160 94
+src/generated/commands/account__account-no-convert-repay.ts
+  4efc08e7bc683160 40
+src/generated/commands/position__switch-position-mode.ts
+  4efc08e7bc683160 46
+src/generated/commands/asset__convert-execute.ts
+  4efc08e7bc683160 28
+src/generated/commands/spot-margin-trade__spot-margin-set-leverage.ts
+  4efc08e7bc683160 34
+src/generated/commands/alpha__get-prediction-group-stage-detail.ts
+  4efc08e7bc683160 34
+src/generated/commands/spread__create-spread-order.ts
+  4efc08e7bc683160 64
+src/generated/commands/p2p__upload-chat-file.ts
+  4efc08e7bc683160 22
+src/generated/commands/account__manual-borrow.ts
+  4efc08e7bc683160 34
+src/generated/commands/dca__create-dcabot.ts
+  4efc08e7bc683160 40
+codegen/templates/command.hbs
+  4efc08e7bc683160 33
+src/generated/commands/account__set-margin-mode.ts
+  4efc08e7bc683160 28
+src/generated/commands/strategy__create-twap-strategy.ts
+  4efc08e7bc683160 112
+src/generated/commands/spread__cancel-spread-order.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__place-rwa-order.ts
+  4efc08e7bc683160 64
+src/generated/commands/unknown__get-tax-report-status.ts
+  4efc08e7bc683160 28
+src/generated/commands/earn__pwm-claim.ts
+  4efc08e7bc683160 40
+src/generated/commands/user__delete-sub-member-v5.ts
+  4efc08e7bc683160 28
+src/generated/commands/earn__pwm-inst-manage-investment-plan.ts
+  4efc08e7bc683160 46
+src/generated/commands/fiat__confirm-quote.ts
+  4efc08e7bc683160 46
+src/generated/commands/crypto-loan-flexible__post-crypto-loan-flexible-borrow.ts
+  4efc08e7bc683160 40
+src/generated/commands/p2p__post-ad.ts
+  4efc08e7bc683160 106
+src/generated/commands/bybitpay__create-refund-order.ts
+  4efc08e7bc683160 40
+src/generated/commands/earn__set-fixed-term-auto-invest.ts
+  4efc08e7bc683160 46
+src/generated/commands/alpha__get-lpposition-list.ts
+  4efc08e7bc683160 22
+src/generated/commands/alpha__get-pay-token-list.ts
+  4efc08e7bc683160 34
+src/generated/commands/account__set-collateral-switch.ts
+  4efc08e7bc683160 34
+src/generated/commands/alpha__get-prediction-position-history.ts
+  4efc08e7bc683160 40
+src/generated/commands/grid__close-grid-bot.ts
+  4efc08e7bc683160 34
+src/generated/commands/fmartingalebot__close-fmart-bot.ts
+  4efc08e7bc683160 34
+src/generated/commands/bybitpay__agreement-unsign.ts
+  4efc08e7bc683160 64
+src/generated/commands/p2p__get-ads.ts
+  4efc08e7bc683160 52
+src/generated/commands/account__set-price-limit.ts
+  4efc08e7bc683160 34
+src/generated/commands/fgridbot__close-fgrid-bot.ts
+  4efc08e7bc683160 28
+src/generated/commands/rfq__create-quote.ts
+  4efc08e7bc683160 58
+src/generated/commands/crypto-loan-common__post-crypto-loan-common-max-loan.ts
+  4efc08e7bc683160 34
+src/generated/commands/spot-margin-trade__renew-fixed-borrow.ts
+  4efc08e7bc683160 34
+src/generated/commands/alpha__get-lppool-list.ts
+  4efc08e7bc683160 28
+src/generated/commands/aurora__rec-aurora-home-aiparams.ts
+  4efc08e7bc683160 22
+src/generated/commands/broker__get-distribution-record.ts
+  4efc08e7bc683160 46
+src/generated/commands/alpha__get-biz-token-details.ts
+  4efc08e7bc683160 34
+src/generated/commands/copy-mt5__create-copy-mt5-bind.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__pwm-inst-create-investment-plan.ts
+  4efc08e7bc683160 52
+src/generated/commands/fgridbot__validate-fgrid-input.ts
+  4efc08e7bc683160 124
+src/generated/commands/order__dcp-set-timewindow.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__modify-earn-position.ts
+  4efc08e7bc683160 46
+src/generated/commands/position__confirm-new-risk-limit.ts
+  4efc08e7bc683160 34
+src/generated/commands/alpha__execute-prediction-buy.ts
+  4efc08e7bc683160 58
+src/generated/commands/ins-loan__ins-loan-association-uid.ts
+  4efc08e7bc683160 34
+src/generated/commands/rfq__accept-non-lp-quote.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-lporder-list.ts
+  4efc08e7bc683160 64
+src/generated/commands/alpha__get-prediction-portfolio-summary.ts
+  4efc08e7bc683160 22
+src/generated/commands/asset__limit-order-callback.ts
+  4efc08e7bc683160 58
+src/generated/commands/alpha__get-prediction-order-estimate.ts
+  4efc08e7bc683160 58
+src/generated/commands/aurora__rec-aurora-creation-aiparams.ts
+  4efc08e7bc683160 34
+src/generated/commands/fiat__apply-quote.ts
+  4efc08e7bc683160 58
+src/generated/commands/position__set-trading-stop.ts
+  4efc08e7bc683160 118
+src/generated/commands/user__delete-sub-apikey.ts
+  4efc08e7bc683160 34
+src/generated/commands/user__sign-agreement.ts
+  4efc08e7bc683160 34
+src/generated/commands/user__create-sub-apikey.ts
+  4efc08e7bc683160 52
+src/generated/commands/earn__pwm-invest-more.ts
+  4efc08e7bc683160 58
+src/generated/commands/asset__universal-transfer.ts
+  4efc08e7bc683160 64
+src/generated/commands/fgridbot__get-fgrid-detail.ts
+  4efc08e7bc683160 28
+src/generated/commands/rfq__cancel-all-rfqs.ts
+  4efc08e7bc683160 22
+src/generated/commands/rfq__cancel-quote.ts
+  4efc08e7bc683160 40
+src/generated/commands/alpha__get-asset-list.ts
+  4efc08e7bc683160 22
+src/generated/commands/order__batch-cancel-orders.ts
+  4efc08e7bc683160 34
+src/generated/commands/strategy__create-pov-strategy.ts
+  4efc08e7bc683160 82
+src/generated/commands/earn__place-fixed-term-order.ts
+  4efc08e7bc683160 64
+src/generated/commands/position__add-reduce-margin.ts
+  4efc08e7bc683160 46
+src/generated/commands/broker__set-broker-api-limit.ts
+  4efc08e7bc683160 28
+src/generated/commands/rfq__cancel-all-quotes.ts
+  4efc08e7bc683160 22
+src/generated/commands/asset__send-withdraw.ts
+  4efc08e7bc683160 88
+src/generated/commands/account__set-spot-hedging.ts
+  4efc08e7bc683160 28
+src/generated/commands/crypto-loan-fixed__post-crypto-loan-fixed-repay-collateral.ts
+  4efc08e7bc683160 46
+src/generated/commands/strategy__create-iceberg-strategy.ts
+  4efc08e7bc683160 112
+src/generated/commands/earn__pwm-inst-manage-order.ts
+  4efc08e7bc683160 40
+src/generated/commands/alpha__get-biz-token-price-list.ts
+  4efc08e7bc683160 28
+src/generated/commands/account__set-collateral-coin.ts
+  4efc08e7bc683160 34
+src/generated/commands/alpha__get-prediction-order-book.ts
+  4efc08e7bc683160 28
+src/generated/commands/position__set-leverage.ts
+  4efc08e7bc683160 46
+src/generated/commands/alpha__execute-lpstake.ts
+  4efc08e7bc683160 70
+src/generated/commands/bybitpay__agreement-pay.ts
+  4efc08e7bc683160 88
+src/generated/commands/fcombobot__get-combo-detail.ts
+  4efc08e7bc683160 28
+src/generated/commands/aurora__rec-explore-strategy.ts
+  4efc08e7bc683160 28
+src/runtime/whitelist.ts
+  4efc08e7bc683160 1-33
+src/generated/commands/dca__close-dcabot.ts
+  4efc08e7bc683160 34
+src/generated/commands/earn__redeem-fixed-term.ts
+  4efc08e7bc683160 40
+src/generated/commands/alpha__get-lppool-info.ts
+  4efc08e7bc683160 28
+src/generated/commands/alpha__get-biz-token-list.ts
+  4efc08e7bc683160 28
+src/generated/commands/bybitpay__agreement-sign.ts
+  4efc08e7bc683160 106
+src/generated/commands/fcombobot__get-combo-limit.ts
+  4efc08e7bc683160 88
+src/generated/commands/earn__pwm-inst-create-fund.ts
+  4efc08e7bc683160 58
+src/generated/commands/order__amend-order.ts
+  4efc08e7bc683160 118
+src/generated/commands/order__batch-amend-orders.ts
+  4efc08e7bc683160 34
+src/generated/commands/grid__validate-grid-input.ts
+  4efc08e7bc683160 106
+src/generated/commands/fmartingalebot__get-fmart-limit.ts
+  4efc08e7bc683160 94
+src/generated/commands/earn__claim-liquidity-interest.ts
+  4efc08e7bc683160 28
+src/generated/commands/position__set-auto-add-margin.ts
+  4efc08e7bc683160 46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "3ed98f4078ab328e2c557f019e7b85ba65d0e452",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 295,
+      "total_deletions": 0,
+      "accepted_lines": 295,
+      "overriden_lines": 0
+    }
+  }
+}
