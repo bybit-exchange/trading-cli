@@ -1,0 +1,31 @@
+src/cli.ts
+  4efc08e7bc683160 102-104
+src/runtime/output.ts
+  4efc08e7bc683160 8-11,16-19,41-44
+src/runtime/fingerprint.ts
+  4efc08e7bc683160 1-36
+src/runtime/sigint-handler.ts
+  4efc08e7bc683160 1-27
+src/runtime/handler.ts
+  4efc08e7bc683160 6-7,29,41-42,44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "aa46524690381e9489c00988584293d290dd194f",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 84,
+      "total_deletions": 3,
+      "accepted_lines": 84,
+      "overriden_lines": 0
+    }
+  }
+}
