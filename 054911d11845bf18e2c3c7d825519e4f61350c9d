@@ -1,0 +1,31 @@
+package.json
+  7e162fc3c572ad36 1-43
+tsconfig.json
+  7e162fc3c572ad36 1-18
+tsup.config.ts
+  7e162fc3c572ad36 1-12
+.gitignore
+  7e162fc3c572ad36 1-12
+src/index.ts
+  7e162fc3c572ad36 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.9+daa2e24",
+  "base_commit_sha": "054911d11845bf18e2c3c7d825519e4f61350c9d",
+  "prompts": {
+    "7e162fc3c572ad36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "382f804f-ed6e-49d7-84d0-887c1b8fea87",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "paul.yang",
+      "messages": [],
+      "total_additions": 90,
+      "total_deletions": 0,
+      "accepted_lines": 90,
+      "overriden_lines": 0
+    }
+  }
+}
