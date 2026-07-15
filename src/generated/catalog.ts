@@ -79,13 +79,6 @@ export const catalog = [
   },
   {
     "domain": "crypto-loan-fixed",
-    "command": "post-crypto-loan-fixed-borrow",
-    "summary": "Create Fixed-Term Borrow Order",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "crypto-loan-fixed",
     "command": "post-crypto-loan-fixed-fully-repay",
     "summary": "Fully Repay Loan",
     "requiresAuth": true,
@@ -160,13 +153,6 @@ export const catalog = [
     "summary": "Get Flexible Borrow History",
     "requiresAuth": true,
     "method": "GET"
-  },
-  {
-    "domain": "crypto-loan-flexible",
-    "command": "post-crypto-loan-flexible-borrow",
-    "summary": "Create Flexible Borrow Order",
-    "requiresAuth": true,
-    "method": "POST"
   },
   {
     "domain": "crypto-loan-flexible",
@@ -354,13 +340,6 @@ export const catalog = [
     "domain": "account",
     "command": "set-spot-hedging",
     "summary": "Set Spot Hedging",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "account",
-    "command": "upgrade-to-uta-pro",
-    "summary": "Upgrade to UTA Pro",
     "requiresAuth": true,
     "method": "POST"
   },
@@ -688,13 +667,6 @@ export const catalog = [
   },
   {
     "domain": "market",
-    "command": "get-rpi-orderbook",
-    "summary": "Get RPI Orderbook",
-    "requiresAuth": false,
-    "method": "GET"
-  },
-  {
-    "domain": "market",
     "command": "get-tickers",
     "summary": "Get Tickers",
     "requiresAuth": false,
@@ -737,24 +709,10 @@ export const catalog = [
   },
   {
     "domain": "position",
-    "command": "get-move-position-history",
-    "summary": "Get move position (block trade) history",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "position",
     "command": "get-position-info",
     "summary": "Get position info (real-time)",
     "requiresAuth": true,
     "method": "GET"
-  },
-  {
-    "domain": "position",
-    "command": "move-position",
-    "summary": "Move positions between UIDs via block trade",
-    "requiresAuth": true,
-    "method": "POST"
   },
   {
     "domain": "position",
@@ -1227,20 +1185,6 @@ export const catalog = [
   },
   {
     "domain": "earn",
-    "command": "modify-earn-position",
-    "summary": "Modify Earn Position",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "earn",
-    "command": "get-earn-apr-history",
-    "summary": "Get APR History",
-    "requiresAuth": false,
-    "method": "GET"
-  },
-  {
-    "domain": "earn",
     "command": "list-earn-coupons",
     "summary": "List Coupons",
     "requiresAuth": true,
@@ -1618,111 +1562,6 @@ export const catalog = [
     "method": "POST"
   },
   {
-    "domain": "bybitpay",
-    "command": "create-pay-order",
-    "summary": "Payment Creation",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "get-pay-result",
-    "summary": "Payment Result",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "mock-payment-status",
-    "summary": "Payment Status Mock (Sandbox Only)",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "fx-convert",
-    "summary": "Payment Fx Convert",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "create-refund-order",
-    "summary": "Order Refund",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "create-payout",
-    "summary": "Payout",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-sign",
-    "summary": "Sign Request",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-unsign",
-    "summary": "Unsign",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-pay",
-    "summary": "Agreement Deduction",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-pay-with-sign",
-    "summary": "Pay with Sign (One-Step)",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-query",
-    "summary": "Sign Status Query",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-list",
-    "summary": "Agreement List Query",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-pay-query",
-    "summary": "Transaction / Refund Query (Single)",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-pay-list",
-    "summary": "Deduction Transaction List",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "bybitpay",
-    "command": "agreement-refund",
-    "summary": "Deduction Refund",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
     "domain": "fiat",
     "command": "query-coin-list",
     "summary": "Get Trading Pairs",
@@ -1850,22 +1689,8 @@ export const catalog = [
   },
   {
     "domain": "p2p",
-    "command": "release-assets",
-    "summary": "Release Assets",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "p2p",
     "command": "send-chat-message",
     "summary": "Send Chat Message",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "p2p",
-    "command": "upload-chat-file",
-    "summary": "Upload Chat File",
     "requiresAuth": true,
     "method": "POST"
   },
@@ -2199,13 +2024,6 @@ export const catalog = [
     "method": "POST"
   },
   {
-    "domain": "account",
-    "command": "upgrade-to-uta",
-    "summary": "Upgrade to Unified Account Pro",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
     "domain": "asset",
     "command": "query-coin-chain-info",
     "summary": "Get Coin Info",
@@ -2263,29 +2081,8 @@ export const catalog = [
   },
   {
     "domain": "asset",
-    "command": "universal-transfer",
-    "summary": "Create Universal Transfer",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "asset",
-    "command": "transfer-sub-member-save",
-    "summary": "Save Transferable Sub Member List",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "asset",
     "command": "inter-transfer-list-query",
     "summary": "Get Internal Transfer Records",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "asset",
-    "command": "universal-transfer-list-query",
-    "summary": "Get Universal Transfer Records",
     "requiresAuth": true,
     "method": "GET"
   },
@@ -2326,24 +2123,10 @@ export const catalog = [
   },
   {
     "domain": "asset",
-    "command": "send-withdraw",
-    "summary": "Withdraw",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "asset",
     "command": "query-withdraw-records",
     "summary": "Get Withdrawal Records",
     "requiresAuth": true,
     "method": "GET"
-  },
-  {
-    "domain": "asset",
-    "command": "cancel-withdraw",
-    "summary": "Cancel Withdrawal",
-    "requiresAuth": true,
-    "method": "POST"
   },
   {
     "domain": "asset",
@@ -2465,58 +2248,9 @@ export const catalog = [
     "method": "GET"
   },
   {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-transaction-log",
-    "summary": "Get Pre-upgrade Transaction Log",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-delivery-record",
-    "summary": "Get Pre-upgrade Delivery Record",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-settlement-record",
-    "summary": "Get Pre-upgrade Settlement Record",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-closed-pnl",
-    "summary": "Get Pre-Upgrade Closed PnL",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-execution-list",
-    "summary": "Get Pre-upgrade Execution List",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "pre-upgrade",
-    "command": "get-pre-upgrade-order-history",
-    "summary": "Get Pre-upgrade Order History",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
     "domain": "spot-margin-trade",
     "command": "get-spot-margin-trade-coin-state",
     "summary": "Get Spot Margin Coin State",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "spot-margin-trade",
-    "command": "get-spot-margin-trade-flexible-available-inventory",
-    "summary": "Get Flexible Available Inventory",
     "requiresAuth": true,
     "method": "GET"
   },
@@ -2596,13 +2330,6 @@ export const catalog = [
     "summary": "Query conversion result",
     "requiresAuth": true,
     "method": "GET"
-  },
-  {
-    "domain": "asset",
-    "command": "limit-order-callback",
-    "summary": "Limit order callback notification",
-    "requiresAuth": true,
-    "method": "POST"
   },
   {
     "domain": "asset",
@@ -2878,44 +2605,9 @@ export const catalog = [
     "method": "GET"
   },
   {
-    "domain": "unknown",
-    "command": "create-tax-report",
-    "summary": "Create tax report file",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "unknown",
-    "command": "get-tax-report-status",
-    "summary": "Query tax report file status",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "unknown",
-    "command": "get-tax-report-url",
-    "summary": "Get tax report file download URL",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "unknown",
-    "command": "get-register-time",
-    "summary": "Query user registration time",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
     "domain": "broker",
     "command": "get-award-info",
     "summary": "Get voucher details",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "broker",
-    "command": "distribute-award",
-    "summary": "Distribute voucher",
     "requiresAuth": true,
     "method": "POST"
   },
@@ -2935,48 +2627,6 @@ export const catalog = [
   },
   {
     "domain": "user",
-    "command": "create-sub-apikey",
-    "summary": "Create Sub API Key",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "create-sub-member",
-    "summary": "Create Sub UID",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "delete-apikey",
-    "summary": "Delete Master API Key",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "delete-sub-apikey",
-    "summary": "Delete Sub-account API Key",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "delete-sub-member-v5",
-    "summary": "Delete Sub-account",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "frozen-sub-member",
-    "summary": "Freeze/Unfreeze Sub UID",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
     "command": "get-member-account-type",
     "summary": "Get Member Account Type",
     "requiresAuth": true,
@@ -2993,13 +2643,6 @@ export const catalog = [
     "domain": "user",
     "command": "query-apikey",
     "summary": "Get API Key Information",
-    "requiresAuth": true,
-    "method": "GET"
-  },
-  {
-    "domain": "user",
-    "command": "query-escrow-sub-members-v5",
-    "summary": "Query Escrow Sub-accounts (Fund Management)",
     "requiresAuth": true,
     "method": "GET"
   },
@@ -3028,20 +2671,6 @@ export const catalog = [
     "domain": "user",
     "command": "sign-agreement",
     "summary": "Sign Agreement",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "update-apikey",
-    "summary": "Modify Master API Key",
-    "requiresAuth": true,
-    "method": "POST"
-  },
-  {
-    "domain": "user",
-    "command": "update-sub-apikey",
-    "summary": "Modify Sub-account API Key",
     "requiresAuth": true,
     "method": "POST"
   }

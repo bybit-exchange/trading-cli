@@ -10,7 +10,6 @@ import * as crypto_loan_fixed_get_crypto_loan_fixed_borrow_contract_info from '.
 import * as crypto_loan_fixed_post_crypto_loan_fixed_borrow_order_cancel from './commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow-order-cancel.js'
 import * as crypto_loan_fixed_get_crypto_loan_fixed_borrow_order_info from './commands/crypto-loan-fixed__get-crypto-loan-fixed-borrow-order-info.js'
 import * as crypto_loan_fixed_get_crypto_loan_fixed_borrow_order_quote from './commands/crypto-loan-fixed__get-crypto-loan-fixed-borrow-order-quote.js'
-import * as crypto_loan_fixed_post_crypto_loan_fixed_borrow from './commands/crypto-loan-fixed__post-crypto-loan-fixed-borrow.js'
 import * as crypto_loan_fixed_post_crypto_loan_fixed_fully_repay from './commands/crypto-loan-fixed__post-crypto-loan-fixed-fully-repay.js'
 import * as crypto_loan_fixed_get_crypto_loan_fixed_renew_info from './commands/crypto-loan-fixed__get-crypto-loan-fixed-renew-info.js'
 import * as crypto_loan_fixed_post_crypto_loan_fixed_renew from './commands/crypto-loan-fixed__post-crypto-loan-fixed-renew.js'
@@ -22,7 +21,6 @@ import * as crypto_loan_fixed_get_crypto_loan_fixed_supply_order_info from './co
 import * as crypto_loan_fixed_get_crypto_loan_fixed_supply_order_quote from './commands/crypto-loan-fixed__get-crypto-loan-fixed-supply-order-quote.js'
 import * as crypto_loan_fixed_post_crypto_loan_fixed_supply from './commands/crypto-loan-fixed__post-crypto-loan-fixed-supply.js'
 import * as crypto_loan_flexible_get_crypto_loan_flexible_borrow_history from './commands/crypto-loan-flexible__get-crypto-loan-flexible-borrow-history.js'
-import * as crypto_loan_flexible_post_crypto_loan_flexible_borrow from './commands/crypto-loan-flexible__post-crypto-loan-flexible-borrow.js'
 import * as crypto_loan_flexible_get_crypto_loan_flexible_ongoing_coin from './commands/crypto-loan-flexible__get-crypto-loan-flexible-ongoing-coin.js'
 import * as crypto_loan_flexible_post_crypto_loan_flexible_repay_collateral from './commands/crypto-loan-flexible__post-crypto-loan-flexible-repay-collateral.js'
 import * as crypto_loan_flexible_post_crypto_loan_flexible_repay from './commands/crypto-loan-flexible__post-crypto-loan-flexible-repay.js'
@@ -50,7 +48,6 @@ import * as account_set_margin_mode from './commands/account__set-margin-mode.js
 import * as account_set_mmp from './commands/account__set-mmp.js'
 import * as account_set_price_limit from './commands/account__set-price-limit.js'
 import * as account_set_spot_hedging from './commands/account__set-spot-hedging.js'
-import * as account_upgrade_to_uta_pro from './commands/account__upgrade-to-uta-pro.js'
 import * as aurora_rec_aurora_creation_aiparams from './commands/aurora__rec-aurora-creation-aiparams.js'
 import * as aurora_rec_easy_bot_strategy from './commands/aurora__rec-easy-bot-strategy.js'
 import * as aurora_rec_explore_strategy from './commands/aurora__rec-explore-strategy.js'
@@ -97,16 +94,13 @@ import * as market_get_orderbook from './commands/market__get-orderbook.js'
 import * as market_get_premium_index_price_kline from './commands/market__get-premium-index-price-kline.js'
 import * as market_get_recent_public_trades from './commands/market__get-recent-public-trades.js'
 import * as market_get_risk_limit from './commands/market__get-risk-limit.js'
-import * as market_get_rpi_orderbook from './commands/market__get-rpi-orderbook.js'
 import * as market_get_tickers from './commands/market__get-tickers.js'
 import * as market_get_server_time from './commands/market__get-server-time.js'
 import * as position_add_reduce_margin from './commands/position__add-reduce-margin.js'
 import * as position_confirm_new_risk_limit from './commands/position__confirm-new-risk-limit.js'
 import * as position_get_close_position from './commands/position__get-close-position.js'
 import * as position_get_closed_pnl from './commands/position__get-closed-pnl.js'
-import * as position_get_move_position_history from './commands/position__get-move-position-history.js'
 import * as position_get_position_info from './commands/position__get-position-info.js'
-import * as position_move_position from './commands/position__move-position.js'
 import * as position_set_auto_add_margin from './commands/position__set-auto-add-margin.js'
 import * as position_set_leverage from './commands/position__set-leverage.js'
 import * as position_set_trading_stop from './commands/position__set-trading-stop.js'
@@ -174,8 +168,6 @@ import * as earn_get_earn_order_history from './commands/earn__get-earn-order-hi
 import * as earn_get_earn_position from './commands/earn__get-earn-position.js'
 import * as earn_get_earn_yield_history from './commands/earn__get-earn-yield-history.js'
 import * as earn_get_earn_hourly_yield_history from './commands/earn__get-earn-hourly-yield-history.js'
-import * as earn_modify_earn_position from './commands/earn__modify-earn-position.js'
-import * as earn_get_earn_apr_history from './commands/earn__get-earn-apr-history.js'
 import * as earn_list_earn_coupons from './commands/earn__list-earn-coupons.js'
 import * as earn_place_token_order from './commands/earn__place-token-order.js'
 import * as earn_get_token_order_list from './commands/earn__get-token-order-list.js'
@@ -230,21 +222,6 @@ import * as earn_pwm_redeem from './commands/earn__pwm-redeem.js'
 import * as earn_pwm_list_order from './commands/earn__pwm-list-order.js'
 import * as earn_pwm_list_product_cards from './commands/earn__pwm-list-product-cards.js'
 import * as earn_pwm_create_custom_plan from './commands/earn__pwm-create-custom-plan.js'
-import * as bybitpay_create_pay_order from './commands/bybitpay__create-pay-order.js'
-import * as bybitpay_get_pay_result from './commands/bybitpay__get-pay-result.js'
-import * as bybitpay_mock_payment_status from './commands/bybitpay__mock-payment-status.js'
-import * as bybitpay_fx_convert from './commands/bybitpay__fx-convert.js'
-import * as bybitpay_create_refund_order from './commands/bybitpay__create-refund-order.js'
-import * as bybitpay_create_payout from './commands/bybitpay__create-payout.js'
-import * as bybitpay_agreement_sign from './commands/bybitpay__agreement-sign.js'
-import * as bybitpay_agreement_unsign from './commands/bybitpay__agreement-unsign.js'
-import * as bybitpay_agreement_pay from './commands/bybitpay__agreement-pay.js'
-import * as bybitpay_agreement_pay_with_sign from './commands/bybitpay__agreement-pay-with-sign.js'
-import * as bybitpay_agreement_query from './commands/bybitpay__agreement-query.js'
-import * as bybitpay_agreement_list from './commands/bybitpay__agreement-list.js'
-import * as bybitpay_agreement_pay_query from './commands/bybitpay__agreement-pay-query.js'
-import * as bybitpay_agreement_pay_list from './commands/bybitpay__agreement-pay-list.js'
-import * as bybitpay_agreement_refund from './commands/bybitpay__agreement-refund.js'
 import * as fiat_query_coin_list from './commands/fiat__query-coin-list.js'
 import * as fiat_get_reference_price from './commands/fiat__get-reference-price.js'
 import * as fiat_apply_quote from './commands/fiat__apply-quote.js'
@@ -263,9 +240,7 @@ import * as p2p_get_all_orders from './commands/p2p__get-all-orders.js'
 import * as p2p_get_order_detail from './commands/p2p__get-order-detail.js'
 import * as p2p_get_pending_orders from './commands/p2p__get-pending-orders.js'
 import * as p2p_mark_order_as_paid from './commands/p2p__mark-order-as-paid.js'
-import * as p2p_release_assets from './commands/p2p__release-assets.js'
 import * as p2p_send_chat_message from './commands/p2p__send-chat-message.js'
-import * as p2p_upload_chat_file from './commands/p2p__upload-chat-file.js'
 import * as p2p_get_chat_messages from './commands/p2p__get-chat-messages.js'
 import * as p2p_get_account_info from './commands/p2p__get-account-info.js'
 import * as p2p_get_counterparty_user_info from './commands/p2p__get-counterparty-user-info.js'
@@ -313,7 +288,6 @@ import * as account_set_batch_collateral_switch from './commands/account__set-ba
 import * as account_set_hedging_mode from './commands/account__set-hedging-mode.js'
 import * as spot_margin_trade_spot_margin_set_leverage from './commands/spot-margin-trade__spot-margin-set-leverage.js'
 import * as spot_margin_trade_spot_margin_switch_mode from './commands/spot-margin-trade__spot-margin-switch-mode.js'
-import * as account_upgrade_to_uta from './commands/account__upgrade-to-uta.js'
 import * as asset_query_coin_chain_info from './commands/asset__query-coin-chain-info.js'
 import * as asset_query_deposit_records from './commands/asset__query-deposit-records.js'
 import * as asset_query_deposit_address from './commands/asset__query-deposit-address.js'
@@ -322,18 +296,13 @@ import * as asset_query_sub_member_deposit_records from './commands/asset__query
 import * as asset_query_internal_deposit_records from './commands/asset__query-internal-deposit-records.js'
 import * as asset_set_default_deposit_to_account from './commands/asset__set-default-deposit-to-account.js'
 import * as asset_inter_transfer from './commands/asset__inter-transfer.js'
-import * as asset_universal_transfer from './commands/asset__universal-transfer.js'
-import * as asset_transfer_sub_member_save from './commands/asset__transfer-sub-member-save.js'
 import * as asset_inter_transfer_list_query from './commands/asset__inter-transfer-list-query.js'
-import * as asset_universal_transfer_list_query from './commands/asset__universal-transfer-list-query.js'
 import * as asset_transfer_coin_list_query from './commands/asset__transfer-coin-list-query.js'
 import * as asset_sub_member_list_query from './commands/asset__sub-member-list-query.js'
 import * as asset_account_coin_balance_query from './commands/asset__account-coin-balance-query.js'
 import * as asset_asset_info_query from './commands/asset__asset-info-query.js'
 import * as asset_user_asset_info_query from './commands/asset__user-asset-info-query.js'
-import * as asset_send_withdraw from './commands/asset__send-withdraw.js'
 import * as asset_query_withdraw_records from './commands/asset__query-withdraw-records.js'
-import * as asset_cancel_withdraw from './commands/asset__cancel-withdraw.js'
 import * as asset_get_withdrawable_amount_by_coin from './commands/asset__get-withdrawable-amount-by-coin.js'
 import * as asset_get_vasplist from './commands/asset__get-vasplist.js'
 import * as asset_query_withdraw_addresses from './commands/asset__query-withdraw-addresses.js'
@@ -351,14 +320,7 @@ import * as asset_get_total_members_assets from './commands/asset__get-total-mem
 import * as execution_get_execution_list from './commands/execution__get-execution-list.js'
 import * as position_get_closed_position_history from './commands/position__get-closed-position-history.js'
 import * as position_get_position_symbol_info from './commands/position__get-position-symbol-info.js'
-import * as pre_upgrade_get_pre_upgrade_transaction_log from './commands/pre-upgrade__get-pre-upgrade-transaction-log.js'
-import * as pre_upgrade_get_pre_upgrade_delivery_record from './commands/pre-upgrade__get-pre-upgrade-delivery-record.js'
-import * as pre_upgrade_get_pre_upgrade_settlement_record from './commands/pre-upgrade__get-pre-upgrade-settlement-record.js'
-import * as pre_upgrade_get_pre_upgrade_closed_pnl from './commands/pre-upgrade__get-pre-upgrade-closed-pnl.js'
-import * as pre_upgrade_get_pre_upgrade_execution_list from './commands/pre-upgrade__get-pre-upgrade-execution-list.js'
-import * as pre_upgrade_get_pre_upgrade_order_history from './commands/pre-upgrade__get-pre-upgrade-order-history.js'
 import * as spot_margin_trade_get_spot_margin_trade_coin_state from './commands/spot-margin-trade__get-spot-margin-trade-coin-state.js'
-import * as spot_margin_trade_get_spot_margin_trade_flexible_available_inventory from './commands/spot-margin-trade__get-spot-margin-trade-flexible-available-inventory.js'
 import * as spot_margin_trade_get_spot_margin_trade_auto_repay_mode from './commands/spot-margin-trade__get-spot-margin-trade-auto-repay-mode.js'
 import * as spot_margin_trade_get_spot_margin_trade_max_borrowable from './commands/spot-margin-trade__get-spot-margin-trade-max-borrowable.js'
 import * as spot_margin_trade_get_spot_margin_trade_repayment_available_amount from './commands/spot-margin-trade__get-spot-margin-trade-repayment-available-amount.js'
@@ -370,7 +332,6 @@ import * as asset_convert_execute from './commands/asset__convert-execute.js'
 import * as asset_convert_history_query from './commands/asset__convert-history-query.js'
 import * as asset_coin_convert_limit_query from './commands/asset__coin-convert-limit-query.js'
 import * as asset_query_result from './commands/asset__query-result.js'
-import * as asset_limit_order_callback from './commands/asset__limit-order-callback.js'
 import * as asset_query_order_by_page from './commands/asset__query-order-by-page.js'
 import * as asset_query_order_from_open_api from './commands/asset__query-order-from-open-api.js'
 import * as asset_quote_apply from './commands/asset__quote-apply.js'
@@ -410,30 +371,16 @@ import * as account_query_dcp_info from './commands/account__query-dcp-info.js'
 import * as account_smp_group_id_query_by_uid from './commands/account__smp-group-id-query-by-uid.js'
 import * as order_dcp_set_timewindow from './commands/order__dcp-set-timewindow.js'
 import * as market_get_group_fee_rate from './commands/market__get-group-fee-rate.js'
-import * as unknown_create_tax_report from './commands/unknown__create-tax-report.js'
-import * as unknown_get_tax_report_status from './commands/unknown__get-tax-report-status.js'
-import * as unknown_get_tax_report_url from './commands/unknown__get-tax-report-url.js'
-import * as unknown_get_register_time from './commands/unknown__get-register-time.js'
 import * as broker_get_award_info from './commands/broker__get-award-info.js'
-import * as broker_distribute_award from './commands/broker__distribute-award.js'
 import * as broker_get_distribution_record from './commands/broker__get-distribution-record.js'
 import * as user_get_affiliate_custom_open_info_v5 from './commands/user__get-affiliate-custom-open-info-v5.js'
-import * as user_create_sub_apikey from './commands/user__create-sub-apikey.js'
-import * as user_create_sub_member from './commands/user__create-sub-member.js'
-import * as user_delete_apikey from './commands/user__delete-apikey.js'
-import * as user_delete_sub_apikey from './commands/user__delete-sub-apikey.js'
-import * as user_delete_sub_member_v5 from './commands/user__delete-sub-member-v5.js'
-import * as user_frozen_sub_member from './commands/user__frozen-sub-member.js'
 import * as user_get_member_account_type from './commands/user__get-member-account-type.js'
 import * as user_list_sub_apikeys_v5 from './commands/user__list-sub-apikeys-v5.js'
 import * as user_query_apikey from './commands/user__query-apikey.js'
-import * as user_query_escrow_sub_members_v5 from './commands/user__query-escrow-sub-members-v5.js'
 import * as user_query_referrals from './commands/user__query-referrals.js'
 import * as user_query_sub_members_v5 from './commands/user__query-sub-members-v5.js'
 import * as user_query_sub_members from './commands/user__query-sub-members.js'
 import * as user_sign_agreement from './commands/user__sign-agreement.js'
-import * as user_update_apikey from './commands/user__update-apikey.js'
-import * as user_update_sub_apikey from './commands/user__update-sub-apikey.js'
 
 export const commands = [
   { domain: 'crypto-loan-common', module: crypto_loan_common_post_crypto_loan_common_adjust_ltv },
@@ -447,7 +394,6 @@ export const commands = [
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_post_crypto_loan_fixed_borrow_order_cancel },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_get_crypto_loan_fixed_borrow_order_info },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_get_crypto_loan_fixed_borrow_order_quote },
-  { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_post_crypto_loan_fixed_borrow },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_post_crypto_loan_fixed_fully_repay },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_get_crypto_loan_fixed_renew_info },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_post_crypto_loan_fixed_renew },
@@ -459,7 +405,6 @@ export const commands = [
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_get_crypto_loan_fixed_supply_order_quote },
   { domain: 'crypto-loan-fixed', module: crypto_loan_fixed_post_crypto_loan_fixed_supply },
   { domain: 'crypto-loan-flexible', module: crypto_loan_flexible_get_crypto_loan_flexible_borrow_history },
-  { domain: 'crypto-loan-flexible', module: crypto_loan_flexible_post_crypto_loan_flexible_borrow },
   { domain: 'crypto-loan-flexible', module: crypto_loan_flexible_get_crypto_loan_flexible_ongoing_coin },
   { domain: 'crypto-loan-flexible', module: crypto_loan_flexible_post_crypto_loan_flexible_repay_collateral },
   { domain: 'crypto-loan-flexible', module: crypto_loan_flexible_post_crypto_loan_flexible_repay },
@@ -487,7 +432,6 @@ export const commands = [
   { domain: 'account', module: account_set_mmp },
   { domain: 'account', module: account_set_price_limit },
   { domain: 'account', module: account_set_spot_hedging },
-  { domain: 'account', module: account_upgrade_to_uta_pro },
   { domain: 'aurora', module: aurora_rec_aurora_creation_aiparams },
   { domain: 'aurora', module: aurora_rec_easy_bot_strategy },
   { domain: 'aurora', module: aurora_rec_explore_strategy },
@@ -534,16 +478,13 @@ export const commands = [
   { domain: 'market', module: market_get_premium_index_price_kline },
   { domain: 'market', module: market_get_recent_public_trades },
   { domain: 'market', module: market_get_risk_limit },
-  { domain: 'market', module: market_get_rpi_orderbook },
   { domain: 'market', module: market_get_tickers },
   { domain: 'market', module: market_get_server_time },
   { domain: 'position', module: position_add_reduce_margin },
   { domain: 'position', module: position_confirm_new_risk_limit },
   { domain: 'position', module: position_get_close_position },
   { domain: 'position', module: position_get_closed_pnl },
-  { domain: 'position', module: position_get_move_position_history },
   { domain: 'position', module: position_get_position_info },
-  { domain: 'position', module: position_move_position },
   { domain: 'position', module: position_set_auto_add_margin },
   { domain: 'position', module: position_set_leverage },
   { domain: 'position', module: position_set_trading_stop },
@@ -611,8 +552,6 @@ export const commands = [
   { domain: 'earn', module: earn_get_earn_position },
   { domain: 'earn', module: earn_get_earn_yield_history },
   { domain: 'earn', module: earn_get_earn_hourly_yield_history },
-  { domain: 'earn', module: earn_modify_earn_position },
-  { domain: 'earn', module: earn_get_earn_apr_history },
   { domain: 'earn', module: earn_list_earn_coupons },
   { domain: 'earn', module: earn_place_token_order },
   { domain: 'earn', module: earn_get_token_order_list },
@@ -667,21 +606,6 @@ export const commands = [
   { domain: 'earn', module: earn_pwm_list_order },
   { domain: 'earn', module: earn_pwm_list_product_cards },
   { domain: 'earn', module: earn_pwm_create_custom_plan },
-  { domain: 'bybitpay', module: bybitpay_create_pay_order },
-  { domain: 'bybitpay', module: bybitpay_get_pay_result },
-  { domain: 'bybitpay', module: bybitpay_mock_payment_status },
-  { domain: 'bybitpay', module: bybitpay_fx_convert },
-  { domain: 'bybitpay', module: bybitpay_create_refund_order },
-  { domain: 'bybitpay', module: bybitpay_create_payout },
-  { domain: 'bybitpay', module: bybitpay_agreement_sign },
-  { domain: 'bybitpay', module: bybitpay_agreement_unsign },
-  { domain: 'bybitpay', module: bybitpay_agreement_pay },
-  { domain: 'bybitpay', module: bybitpay_agreement_pay_with_sign },
-  { domain: 'bybitpay', module: bybitpay_agreement_query },
-  { domain: 'bybitpay', module: bybitpay_agreement_list },
-  { domain: 'bybitpay', module: bybitpay_agreement_pay_query },
-  { domain: 'bybitpay', module: bybitpay_agreement_pay_list },
-  { domain: 'bybitpay', module: bybitpay_agreement_refund },
   { domain: 'fiat', module: fiat_query_coin_list },
   { domain: 'fiat', module: fiat_get_reference_price },
   { domain: 'fiat', module: fiat_apply_quote },
@@ -700,9 +624,7 @@ export const commands = [
   { domain: 'p2p', module: p2p_get_order_detail },
   { domain: 'p2p', module: p2p_get_pending_orders },
   { domain: 'p2p', module: p2p_mark_order_as_paid },
-  { domain: 'p2p', module: p2p_release_assets },
   { domain: 'p2p', module: p2p_send_chat_message },
-  { domain: 'p2p', module: p2p_upload_chat_file },
   { domain: 'p2p', module: p2p_get_chat_messages },
   { domain: 'p2p', module: p2p_get_account_info },
   { domain: 'p2p', module: p2p_get_counterparty_user_info },
@@ -750,7 +672,6 @@ export const commands = [
   { domain: 'account', module: account_set_hedging_mode },
   { domain: 'spot-margin-trade', module: spot_margin_trade_spot_margin_set_leverage },
   { domain: 'spot-margin-trade', module: spot_margin_trade_spot_margin_switch_mode },
-  { domain: 'account', module: account_upgrade_to_uta },
   { domain: 'asset', module: asset_query_coin_chain_info },
   { domain: 'asset', module: asset_query_deposit_records },
   { domain: 'asset', module: asset_query_deposit_address },
@@ -759,18 +680,13 @@ export const commands = [
   { domain: 'asset', module: asset_query_internal_deposit_records },
   { domain: 'asset', module: asset_set_default_deposit_to_account },
   { domain: 'asset', module: asset_inter_transfer },
-  { domain: 'asset', module: asset_universal_transfer },
-  { domain: 'asset', module: asset_transfer_sub_member_save },
   { domain: 'asset', module: asset_inter_transfer_list_query },
-  { domain: 'asset', module: asset_universal_transfer_list_query },
   { domain: 'asset', module: asset_transfer_coin_list_query },
   { domain: 'asset', module: asset_sub_member_list_query },
   { domain: 'asset', module: asset_account_coin_balance_query },
   { domain: 'asset', module: asset_asset_info_query },
   { domain: 'asset', module: asset_user_asset_info_query },
-  { domain: 'asset', module: asset_send_withdraw },
   { domain: 'asset', module: asset_query_withdraw_records },
-  { domain: 'asset', module: asset_cancel_withdraw },
   { domain: 'asset', module: asset_get_withdrawable_amount_by_coin },
   { domain: 'asset', module: asset_get_vasplist },
   { domain: 'asset', module: asset_query_withdraw_addresses },
@@ -788,14 +704,7 @@ export const commands = [
   { domain: 'execution', module: execution_get_execution_list },
   { domain: 'position', module: position_get_closed_position_history },
   { domain: 'position', module: position_get_position_symbol_info },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_transaction_log },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_delivery_record },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_settlement_record },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_closed_pnl },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_execution_list },
-  { domain: 'pre-upgrade', module: pre_upgrade_get_pre_upgrade_order_history },
   { domain: 'spot-margin-trade', module: spot_margin_trade_get_spot_margin_trade_coin_state },
-  { domain: 'spot-margin-trade', module: spot_margin_trade_get_spot_margin_trade_flexible_available_inventory },
   { domain: 'spot-margin-trade', module: spot_margin_trade_get_spot_margin_trade_auto_repay_mode },
   { domain: 'spot-margin-trade', module: spot_margin_trade_get_spot_margin_trade_max_borrowable },
   { domain: 'spot-margin-trade', module: spot_margin_trade_get_spot_margin_trade_repayment_available_amount },
@@ -807,7 +716,6 @@ export const commands = [
   { domain: 'asset', module: asset_convert_history_query },
   { domain: 'asset', module: asset_coin_convert_limit_query },
   { domain: 'asset', module: asset_query_result },
-  { domain: 'asset', module: asset_limit_order_callback },
   { domain: 'asset', module: asset_query_order_by_page },
   { domain: 'asset', module: asset_query_order_from_open_api },
   { domain: 'asset', module: asset_quote_apply },
@@ -847,28 +755,14 @@ export const commands = [
   { domain: 'account', module: account_smp_group_id_query_by_uid },
   { domain: 'order', module: order_dcp_set_timewindow },
   { domain: 'market', module: market_get_group_fee_rate },
-  { domain: 'unknown', module: unknown_create_tax_report },
-  { domain: 'unknown', module: unknown_get_tax_report_status },
-  { domain: 'unknown', module: unknown_get_tax_report_url },
-  { domain: 'unknown', module: unknown_get_register_time },
   { domain: 'broker', module: broker_get_award_info },
-  { domain: 'broker', module: broker_distribute_award },
   { domain: 'broker', module: broker_get_distribution_record },
   { domain: 'user', module: user_get_affiliate_custom_open_info_v5 },
-  { domain: 'user', module: user_create_sub_apikey },
-  { domain: 'user', module: user_create_sub_member },
-  { domain: 'user', module: user_delete_apikey },
-  { domain: 'user', module: user_delete_sub_apikey },
-  { domain: 'user', module: user_delete_sub_member_v5 },
-  { domain: 'user', module: user_frozen_sub_member },
   { domain: 'user', module: user_get_member_account_type },
   { domain: 'user', module: user_list_sub_apikeys_v5 },
   { domain: 'user', module: user_query_apikey },
-  { domain: 'user', module: user_query_escrow_sub_members_v5 },
   { domain: 'user', module: user_query_referrals },
   { domain: 'user', module: user_query_sub_members_v5 },
   { domain: 'user', module: user_query_sub_members },
-  { domain: 'user', module: user_sign_agreement },
-  { domain: 'user', module: user_update_apikey },
-  { domain: 'user', module: user_update_sub_apikey }
+  { domain: 'user', module: user_sign_agreement }
 ]

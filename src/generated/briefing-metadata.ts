@@ -1,19 +1,19 @@
 // AUTO-GENERATED. DO NOT EDIT.
 export const briefingMetadata = {
-  "commandCount": 435,
-  "domainCount": 32,
+  "commandCount": 382,
+  "domainCount": 29,
   "domains": [
     {
       "domain": "earn",
-      "count": 69
-    },
-    {
-      "domain": "asset",
-      "count": 44
+      "count": 67
     },
     {
       "domain": "account",
-      "count": 40
+      "count": 38
+    },
+    {
+      "domain": "asset",
+      "count": 38
     },
     {
       "domain": "alpha",
@@ -21,35 +21,23 @@ export const briefingMetadata = {
     },
     {
       "domain": "market",
-      "count": 23
+      "count": 22
     },
     {
       "domain": "spot-margin-trade",
-      "count": 20
-    },
-    {
-      "domain": "user",
-      "count": 18
-    },
-    {
-      "domain": "p2p",
-      "count": 17
-    },
-    {
-      "domain": "crypto-loan-fixed",
-      "count": 15
+      "count": 19
     },
     {
       "domain": "rfq",
       "count": 15
     },
     {
-      "domain": "bybitpay",
+      "domain": "p2p",
       "count": 15
     },
     {
-      "domain": "position",
-      "count": 13
+      "domain": "crypto-loan-fixed",
+      "count": 14
     },
     {
       "domain": "spread",
@@ -60,12 +48,16 @@ export const briefingMetadata = {
       "count": 13
     },
     {
+      "domain": "position",
+      "count": 11
+    },
+    {
       "domain": "ins-loan",
       "count": 9
     },
     {
-      "domain": "broker",
-      "count": 8
+      "domain": "user",
+      "count": 9
     },
     {
       "domain": "crypto-loan-common",
@@ -80,12 +72,12 @@ export const briefingMetadata = {
       "count": 7
     },
     {
-      "domain": "crypto-loan-flexible",
-      "count": 6
+      "domain": "broker",
+      "count": 7
     },
     {
-      "domain": "pre-upgrade",
-      "count": 6
+      "domain": "crypto-loan-flexible",
+      "count": 5
     },
     {
       "domain": "aurora",
@@ -105,10 +97,6 @@ export const briefingMetadata = {
     },
     {
       "domain": "grid",
-      "count": 4
-    },
-    {
-      "domain": "unknown",
       "count": 4
     },
     {
