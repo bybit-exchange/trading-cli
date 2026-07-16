@@ -1,0 +1,47 @@
+scripts/build-manifest.mjs
+  4efc08e7bc683160 1-138
+package.json
+  4efc08e7bc683160 16
+  7e162fc3c572ad36 6-7
+tests/unit/manifest-verify.test.ts
+  4efc08e7bc683160 3-4,10-17,30-38,40-41,44,49-50,55-57,61-62,69,75-85
+docs/release-flow.md
+  4efc08e7bc683160 3,7-10,15,17,19,21-25,27,29,31-36,38,40-42,44-55,57,59-61,63,65-70,72-83,86-135,137-139
+src/runtime/manifest-verify.ts
+  4efc08e7bc683160 2,9,11-16,18-21,24-25,29,31,33,37,47-52,56,60-63,65-75,77-87,99-102,107-108,110-115,117-127,131
+src/cli.ts
+  4efc08e7bc683160 136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "c5a39fcdf7544f45d1ab0127c8527898dc65e755",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 11,
+      "total_deletions": 1,
+      "accepted_lines": 705,
+      "overriden_lines": 0
+    },
+    "7e162fc3c572ad36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "382f804f-ed6e-49d7-84d0-887c1b8fea87",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "paul.yang",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
