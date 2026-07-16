@@ -9,9 +9,14 @@ import { checkForUpdate } from './runtime/update-check.js'
 import { selfUpdate } from './runtime/self-update.js'
 import { installSkill, uninstallSkill, listPlatforms, type Platform } from './runtime/install-skill.js'
 import { verifyIntegrity } from './runtime/manifest-verify.js'
+import { maybeOfferSkillRegistration } from './runtime/first-run.js'
 
 // Non-blocking update check; prints to stderr, never blocks main flow.
 checkForUpdate()
+
+// First-run: offer to register agent skill (interactive TTY only, silent otherwise).
+// Fire-and-forget; if user takes too long we just don't await.
+maybeOfferSkillRegistration().catch(() => { /* never block CLI on first-run prompt */ })
 
 // Pre-yargs intercept: --json-schema bypasses arg validation.
 // Match by scanning argv for the domain + command tokens, then look up the module.

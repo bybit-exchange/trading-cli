@@ -32,13 +32,17 @@ export function checkConfirm(argv: any, summary: ConfirmSummary): void {
   }
 
   if (!argv.yes) {
+    // SECURITY: Do NOT serialize summary.params here.
+    // Trading params (coin/qty/price) written to stdout leak into AI agent
+    // conversation context and provider logs — strategy exposure + front-running risk.
+    // Users can inspect what they typed via their shell history / --help.
     emitError({
       retCode: -1,
       retMsg: `mainnet write "${summary.operation}" requires --yes`,
       hint: 'append --yes to confirm this operation',
       nextSteps: [
         `will call: ${summary.method} ${summary.path}`,
-        `with params: ${JSON.stringify(summary.params)}`,
+        `review params: bybit-cli ${summary.operation} --help`,
       ],
     })
     return process.exit(1) as never
