@@ -34,6 +34,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "build:manifest": "node scripts/build-manifest.mjs",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
