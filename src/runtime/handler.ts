@@ -5,6 +5,7 @@ import { lookupHint } from './error-hints.js'
 import { ensureClockSynced, ClockSkewError } from './time-sync.js'
 import { armSigintHandler, disarmSigintHandler } from './sigint-handler.js'
 import { checkKeyFingerprint } from './fingerprint.js'
+import { checkVersionForWrite } from './manifest-verify.js'
 
 export type HandlerConfig = {
   method: 'GET' | 'POST'
@@ -39,6 +40,12 @@ export function createHandler(config: HandlerConfig) {
       }
       const spec = config.mapArgs(argv)
       const linkId = argv['order-link-id'] ?? argv.orderLinkId
+      // Layer-2 integrity gate: for every write op, verify local install matches
+      // Bybit's published manifest before we hit the wire. Runs AFTER checkConfirm
+      // (in generated wrapper) and AFTER credential/clock checks (fail-fast on
+      // local misconfig), but is the LAST thing before I/O — a tampered binary
+      // must not be able to send a signed POST. Exits process on skew.
+      if (spec.method === 'POST') await checkVersionForWrite()
       if (spec.method === 'POST' && linkId) armSigintHandler(String(linkId))
       const result = await callBybit(spec, credentials) as BybitResponse
       disarmSigintHandler()

@@ -8,8 +8,17 @@ import { activateKillSwitch, deactivateKillSwitch } from './runtime/kill-switch.
 import { checkForUpdate } from './runtime/update-check.js'
 import { selfUpdate } from './runtime/self-update.js'
 import { installSkill, uninstallSkill, listPlatforms, type Platform } from './runtime/install-skill.js'
-import { verifyIntegrity } from './runtime/manifest-verify.js'
+import { verifyIntegrity, verifyAtStartup } from './runtime/manifest-verify.js'
 import { maybeOfferSkillRegistration } from './runtime/first-run.js'
+
+// Layer-1 integrity gate: verify local install SHA256 against Bybit's published
+// manifest on EVERY invocation. Blocking on purpose — if the local binary is
+// tampered, nothing else should run (not even the update check, which could
+// otherwise be subverted to keep a tampered install "up to date"). Fast-path
+// 24h marker cache lives in ~/.bybit-cli/startup-verify.json. Skew =
+// process.exit(1); network/offline = warn + continue. Bundled installs only —
+// tsx dev runs skip via import.meta.url .ts check. NO env-var bypass.
+await verifyAtStartup()
 
 // Non-blocking update check; prints to stderr, never blocks main flow.
 checkForUpdate()
