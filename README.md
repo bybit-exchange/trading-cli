@@ -106,7 +106,21 @@ Node's fetch doesn't read the macOS keychain by default.
 
 ## Supply chain
 
-`bybit-cli verify` fetches Bybit's official manifest (`https://api.bybit.com/cli/manifest`) and checks SHA256 of the local bundle. Manifest is signed by Bybit's internal release pipeline — separate credentials from npm publish (see [docs/release-flow.md](docs/release-flow.md) for the double-key trust model).
+`bybit-cli verify` fetches Bybit's official manifest at **`https://api.bybit.com/ai-manifest/cli/manifest`** and checks SHA256 of the local bundle against it. The manifest is signed by Bybit's internal release pipeline — separate credentials from npm publish (see [docs/release-flow.md](docs/release-flow.md) for the double-key trust model).
+
+Third-party auditors can independently verify install integrity without trusting the CLI:
+
+```bash
+# 1) Fetch the official manifest
+curl -sS https://api.bybit.com/ai-manifest/cli/manifest
+
+# 2) Fetch the exact npm tarball users install
+curl -sSL "$(npm view bybit-official-trading-cli@latest dist.tarball)" -o /tmp/x.tgz
+
+# 3) Compute SHA256 of dist/index.js and compare against manifest
+tar xzOf /tmp/x.tgz package/dist/index.js | shasum -a 256
+tar xzOf /tmp/x.tgz package/skill/SKILL.md | shasum -a 256
+```
 
 ## License
 
