@@ -1,0 +1,29 @@
+src/cli.ts
+  4efc08e7bc683160 11,14-21
+src/runtime/manifest-verify.ts
+  4efc08e7bc683160 9,11-13,22-27,45-50,61-75,106-168,225-354
+tests/unit/manifest-verify.test.ts
+  4efc08e7bc683160 1-2,9,20-27,97-211
+src/runtime/handler.ts
+  4efc08e7bc683160 8,43-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.10+672fbf0",
+  "base_commit_sha": "ff6090108e336d34fc29bfff22c3a23f930ecad7",
+  "prompts": {
+    "4efc08e7bc683160": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d0efec9a-551b-401b-91c2-c31a35ccd8aa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "johnny.wang",
+      "messages": [],
+      "total_additions": 374,
+      "total_deletions": 9,
+      "accepted_lines": 443,
+      "overriden_lines": 0
+    }
+  }
+}
