@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+// shebang added by tsup banner.js at bundle time — do not add here (would duplicate)
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import { commands } from './generated/index.js'
@@ -133,7 +133,7 @@ cli.command('uninstall-skill', 'Remove bootstrap skill from all agent platforms'
 cli.command('verify', 'Verify local install against Bybit-hosted manifest (supply-chain check)', {}, async () => {
   const result = await verifyIntegrity()
   process.stdout.write(JSON.stringify({
-    retCode: result.status === 'ok' || result.status === 'placeholder' ? 0 : -1,
+    retCode: result.status === 'ok' ? 0 : -1,
     retMsg: result.status,
     result,
   }) + '\n')

@@ -1,28 +1,24 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { verifyIntegrity } from '../../src/runtime/manifest-verify'
-import { promises as fs } from 'node:fs'
+import { promises as fs, existsSync, readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import path from 'node:path'
 import os from 'node:os'
 
 const CACHE_FILE = path.join(os.homedir(), '.bybit-cli/manifest-cache.json')
 
+// The actual bundle path that manifest-verify looks for.
+// Runs after `pnpm build` / `npm run build` — tests skip if not built.
+const DIST_PATH = path.join(process.cwd(), 'dist', 'index.js')
+
+function localSha(p: string): string {
+  return createHash('sha256').update(readFileSync(p)).digest('hex')
+}
+
 describe('verifyIntegrity', () => {
   afterEach(async () => {
     try { await fs.rm(CACHE_FILE) } catch { /* ignore */ }
     vi.unstubAllGlobals()
-  })
-
-  it('returns "placeholder" when manifest has PLACEHOLDER SHAs', async () => {
-    vi.stubGlobal('fetch', () => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve({
-        version: '0.0.1',
-        package: 'bybit-official-trading-cli',
-        sha256: { 'dist/index.mjs': 'PLACEHOLDER_COMPUTED_AT_RELEASE' },
-      }),
-    } as Response))
-    const result = await verifyIntegrity()
-    expect(result.status).toBe('placeholder')
   })
 
   it('returns "network-error" when fetch fails and no cache', async () => {
@@ -31,45 +27,61 @@ describe('verifyIntegrity', () => {
     expect(result.status).toBe('network-error')
   })
 
+  it('rejects manifest without `files` field (schema mismatch)', async () => {
+    vi.stubGlobal('fetch', () => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({ version: '0.0.1', sha256: {} }),  // old schema
+    } as Response))
+    const result = await verifyIntegrity()
+    expect(result.status).toBe('network-error')  // caught as fetch-layer failure
+  })
+
   it('returns "ok" when SHA matches manifest', async () => {
-    // Use dist/index.mjs actual SHA
-    const { createHash } = await import('node:crypto')
-    const { readFileSync, existsSync } = await import('node:fs')
-    const distPath = path.join(process.cwd(), 'dist', 'index.mjs')
-    if (!existsSync(distPath)) {
-      console.warn('SKIP: dist/index.mjs not built')
+    if (!existsSync(DIST_PATH)) {
+      console.warn('SKIP: dist/index.js not built')
       return
     }
-    const actualSha = createHash('sha256').update(readFileSync(distPath)).digest('hex')
-
+    const actualSha = localSha(DIST_PATH)
     vi.stubGlobal('fetch', () => Promise.resolve({
       ok: true,
       json: () => Promise.resolve({
         version: '0.0.1',
-        package: 'bybit-official-trading-cli',
-        sha256: { 'dist/index.mjs': actualSha },
+        generated: '2026-07-16',
+        files: { 'dist/index.js': 'sha256:' + actualSha },
       }),
     } as Response))
     const result = await verifyIntegrity()
     expect(result.status).toBe('ok')
+    if (result.status === 'ok') {
+      expect(result.filesChecked).toBeGreaterThan(0)
+    }
   })
 
   it('returns "skew" when SHA does not match', async () => {
-    const { existsSync } = await import('node:fs')
-    const distPath = path.join(process.cwd(), 'dist', 'index.mjs')
-    if (!existsSync(distPath)) {
-      console.warn('SKIP: dist/index.mjs not built')
+    if (!existsSync(DIST_PATH)) {
+      console.warn('SKIP: dist/index.js not built')
       return
     }
     vi.stubGlobal('fetch', () => Promise.resolve({
       ok: true,
       json: () => Promise.resolve({
         version: '0.0.1',
-        package: 'bybit-official-trading-cli',
-        sha256: { 'dist/index.mjs': 'wrong_sha_' + '0'.repeat(50) },
+        files: { 'dist/index.js': 'sha256:' + '0'.repeat(64) },
       }),
     } as Response))
     const result = await verifyIntegrity()
     expect(result.status).toBe('skew')
+  })
+
+  it('returns "no-files-locatable" when manifest lists only files that do not exist locally', async () => {
+    vi.stubGlobal('fetch', () => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({
+        version: '0.0.1',
+        files: { 'nonexistent/file.js': 'sha256:deadbeef' },
+      }),
+    } as Response))
+    const result = await verifyIntegrity()
+    expect(result.status).toBe('no-files-locatable')
   })
 })
