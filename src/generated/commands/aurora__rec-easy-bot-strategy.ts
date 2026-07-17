@@ -1,0 +1,81 @@
+// AUTO-GENERATED. DO NOT EDIT. Regenerate: pnpm generate
+import { createHandler } from '../../runtime/handler.js'
+import { checkConfirm } from '../../runtime/confirm.js'
+import { makeOrderLinkId } from '../../runtime/order-link.js'
+export const command = 'rec-easy-bot-strategy'
+export const describe = "Get one-click EasyBot AI strategy recommendation"
+export const isWriteOp = true
+
+export const jsonSchema = {
+  $schema: 'https://json-schema.org/draft/2020-12/schema',
+  type: 'object',
+  properties: {
+    'symbol': {
+      type: 'string',
+      description: "Trading pair, e.g. BTCUSDT (may be a multi-token symbol)",
+      
+    },
+    'product': {
+      type: 'integer',
+      description: "Product surface — spot or futures",
+      enum: ['0', '1', '2'],
+    },
+    'direction': {
+      type: 'integer',
+      description: "Market direction",
+      enum: ['0', '1', '2', '3'],
+    }
+  },
+  required: ['symbol', 'product', 'direction'],
+} as const
+
+export const builder = (yargs: any) => yargs
+  .option('symbol', { type: 'string', demandOption: true, describe: "Trading pair, e.g. BTCUSDT (may be a multi-token symbol)" })
+  .option('product', { type: 'number', choices: ['0', '1', '2'], demandOption: true, describe: "Product surface — spot or futures" })
+  .option('direction', { type: 'number', choices: ['0', '1', '2', '3'], demandOption: true, describe: "Market direction" })
+  .option('json-schema', { type: 'boolean', describe: 'Print JSON Schema and exit' })
+  .option('yes', { type: 'boolean', describe: 'Confirm mainnet write op (required on mainnet)' })
+  .option('cap-usd', { type: 'number', describe: 'Reject if estimated USD value exceeds this' })
+  .option('cap-usd-total-hour', { type: 'number', describe: 'Reject if rolling 1h total exceeds this' })
+  .option('max-orders-per-hour', { type: 'number', describe: 'Reject if 1h order count would exceed this' })
+  .option('enable-advanced-money-ops', { type: 'boolean', describe: 'Unlock withdraw/transfer/fiat/p2p endpoints' })
+
+function filterDefined(obj: Record<string, unknown>): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const [k, v] of Object.entries(obj)) {
+    if (v !== undefined && v !== null) out[k] = String(v)
+  }
+  return out
+}
+
+const innerHandler = createHandler({
+  method: 'POST',
+  path: '/v5/aurora/easy',
+  requiresAuth: true,
+  mapArgs: (argv) => ({
+    method: 'POST',
+    path: '/v5/aurora/easy',
+    
+    body: { symbol: argv['symbol'], product: argv['product'], direction: argv['direction'] },
+  }),
+})
+
+export const handler = async (argv: any) => {
+  if (argv['json-schema']) {
+    process.stdout.write(JSON.stringify(jsonSchema, null, 2) + '\n')
+    return
+  }
+  // Auto-inject orderLinkId for idempotency across retries.
+  // User can override with --order-link-id.
+  if (argv['order-link-id'] === undefined && argv.orderLinkId === undefined) {
+    argv['order-link-id'] = makeOrderLinkId(argv)
+    argv.orderLinkId = argv['order-link-id']
+  }
+  checkConfirm(argv, {
+    operation: 'aurora rec-easy-bot-strategy',
+    method: 'POST',
+    path: '/v5/aurora/easy',
+    params: argv,
+  })
+  return innerHandler(argv)
+}

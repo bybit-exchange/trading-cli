@@ -10,3 +10,7 @@ dist/
 
 # macOS
 .DS_Store
+
+# Internal-only artifacts not shipped to public repo
+specs/
+.gitmodules

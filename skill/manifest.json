@@ -1,0 +1,8 @@
+{
+  "version": "0.0.1",
+  "package": "bybit-official-trading-cli",
+  "files": {
+    "SKILL.md": "sha256:PLACEHOLDER_COMPUTED_AT_RELEASE"
+  },
+  "note": "SHA256 values are computed by the release CI pipeline. Local dev checks are skipped when values are PLACEHOLDER_*."
+}
