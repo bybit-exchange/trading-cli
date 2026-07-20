@@ -2,6 +2,7 @@ import { signHmac } from './signer.js'
 import { signRsa } from './rsa-signer.js'
 import type { Credentials } from './credentials.js'
 import { HOSTS } from './hosts.js'
+import { commonHeaders } from './http-headers.js'
 
 export type RequestSpec = {
   method: 'GET' | 'POST'
@@ -43,6 +44,7 @@ export async function callBybit(spec: RequestSpec, credentials: Credentials): Pr
     : signHmac({ ...signInput, secret: credentials.secret })
 
   const headers: Record<string, string> = {
+    ...commonHeaders(),   // X-Referer + User-Agent — for Bybit-side traffic analytics
     'X-BAPI-API-KEY': credentials.key,
     'X-BAPI-SIGN': signature,
     'X-BAPI-TIMESTAMP': String(timestamp),

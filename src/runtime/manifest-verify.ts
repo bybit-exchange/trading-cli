@@ -3,6 +3,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import path from 'node:path'
 import os from 'node:os'
 import { fileURLToPath } from 'node:url'
+import { commonHeaders } from './http-headers.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const CACHE_FILE = path.join(os.homedir(), '.bybit-cli/manifest-cache.json')
@@ -70,7 +71,7 @@ function writeStartupMarker(marker: StartupMarker): void {
 
 async function fetchManifest(signal?: AbortSignal): Promise<Manifest> {
   const res = await fetch(MANIFEST_URL, {
-    headers: { 'User-Agent': 'bybit-cli/verify' },
+    headers: commonHeaders(),
     signal,
   })
   if (!res.ok) throw new Error(`HTTP ${res.status} from ${MANIFEST_URL}`)

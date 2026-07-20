@@ -2,6 +2,7 @@ import { promises as fs } from 'node:fs'
 import path from 'node:path'
 import os from 'node:os'
 import { HOSTS, type BybitEnv } from './hosts.js'
+import { commonHeaders } from './http-headers.js'
 
 const CACHE_FILE = path.join(os.homedir(), '.bybit-cli/clock-check')
 const CHECK_INTERVAL_MS = 24 * 60 * 60 * 1000
@@ -24,7 +25,7 @@ async function isCheckFresh(): Promise<boolean> {
 }
 
 export async function checkClockSkew(env: BybitEnv): Promise<number> {
-  const res = await fetch(HOSTS[env] + '/v5/market/time')
+  const res = await fetch(HOSTS[env] + '/v5/market/time', { headers: commonHeaders() })
   const body = await res.json() as { result?: { timeSecond?: string } }
   const serverSec = Number(body.result?.timeSecond ?? 0)
   if (!serverSec) throw new Error('unable to parse server time')
