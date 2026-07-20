@@ -29,7 +29,24 @@ describe('callBybit', () => {
       'X-BAPI-SIGN': expect.any(String),
       'X-BAPI-TIMESTAMP': expect.any(String),
       'X-BAPI-RECV-WINDOW': '5000',
+      'X-Referer': 'bybit-ai-cli',
+      'User-Agent': expect.stringMatching(/^bybit-official-trading-cli\//),
     })
+  })
+
+  it('POST includes X-Referer and User-Agent for Bybit traffic analytics', async () => {
+    const fetchSpy = vi.fn(() => mockResponse({ retCode: 0 }))
+    vi.stubGlobal('fetch', fetchSpy)
+
+    await callBybit(
+      { method: 'POST', path: '/v5/order/create', body: { symbol: 'BTCUSDT' } },
+      credentials
+    )
+
+    const [, init] = fetchSpy.mock.calls[0] as unknown as [URL, RequestInit]
+    const headers = init.headers as Record<string, string>
+    expect(headers['X-Referer']).toBe('bybit-ai-cli')
+    expect(headers['User-Agent']).toMatch(/^bybit-official-trading-cli\//)
   })
 
   it('POST sends compact JSON body', async () => {
